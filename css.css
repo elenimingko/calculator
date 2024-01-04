@@ -1,0 +1,92 @@
+body{
+    background-color: #13223D;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.calculator{
+    border: 2px solid #FFFF;
+    border-radius: 10px;
+    box-sizing: border-box;
+    height: 400px;
+    width: 300px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(5,1fr);
+    gap: 10px;
+    padding: 20px;
+}
+#display{ 
+    grid-column: 1/5;
+    grid-row: 1/1;
+    color: #057E18;
+    font-size: xx-large;
+    background-color: #FFFF;
+    border-radius: 20px;
+    text-align: right;
+    padding: 10px;
+}
+#sevent{
+    grid-column: 1/2;
+    grid-row: 2/3;   
+}
+button{
+    border-radius: 50%;
+    border: none;
+    color: #ED7A30;
+    background-color: #FFFF;
+    font-size: xx-large;  
+}
+#eight{
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+#neun{
+    grid-column: 3/4;
+    grid-row-start: 2/3;
+
+}
+#division, #multiplay,#minus,#plus {
+    color: #343aee;
+    font-size: xx-large;
+}
+#division{
+    grid-column: 4/5;
+    grid-row: 2/3;
+}
+#four{
+    grid-column: 1/2;
+    grid-row: 3/4;
+ }
+#five{
+    grid-column-start: 2/3;
+    grid-row-start: 3/4;
+  }
+  #six{
+    grid-column-start: 3/4;
+    grid-row-start: 3/4;
+  }
+
+#multiplay{
+    grid-column: 4/5;
+    grid-row: 3/4;
+    
+}
+#one{
+    grid-column: 1/2;
+    grid-row: 4/5;
+}
+#two{
+    grid-column: 2/3;
+    grid-row: 4/5;
+}
+#minus{
+    grid-column: 4/5;
+    grid-row: 4/5;  
+}
+#equal{
+    grid-column: 3/4;
+    grid-row: 5/6;
+}
