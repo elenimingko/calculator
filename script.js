@@ -1,21 +1,23 @@
 function displa(val) { 
-  document.getElementById("display").value += val 
+  let operators = ['+', '-', '*', '/'];
+ let number= document.getElementById('display').value;
+ const last = number[number.length - 1];
+ 
+ if (operators.includes(val) && operators.includes(last)) {
+  return ;
+ }else{
+ document.getElementById('display').value += val;
+ }
+
 } 
 function cleare() {
   document.getElementById('display').value ='';
 }
 
 function calculatore() {
-  let operators = ['+', '-', '*', '/'];
- let number= document.getElementById('display').value;
- const last = number[number.length - 1];
- console.log(last);
- if (operators.includes(last)) {
-  return ;
- }else{
-   let result=eval(number);
- document.getElementById('display').value=result;
- }
+  let number= document.getElementById('display').value;
+  let result=eval(number);
+  document.getElementById('display').value=result;
 }
 
 
