@@ -60,13 +60,9 @@ button{
     grid-column: 1/2;
     grid-row: 3/4;
  }
-#five{
-    grid-column-start: 2/3;
-    grid-row-start: 3/4;
-  }
-  #six{
-    grid-column-start: 3/4;
-    grid-row-start: 3/4;
+  #five{
+    grid-column: 2/3;
+    grid-row: 3/4;
   }
 
 #multiplay{
